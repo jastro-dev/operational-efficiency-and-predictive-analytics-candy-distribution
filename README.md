@@ -1,4 +1,4 @@
-### Operational Efficiency Benchmarking for Candy Distribution (Work in Progress)
+# Operational Efficiency Benchmarking for Candy Distribution (Work in Progress)
 
 This project aims to benchmark and improve the operational efficiency of a candy manufacturing and distribution business. This repository is a work in progress. It integrates diverse data sources, performs detailed analyses, and builds predictive and interactive tools to provide actionable insights and continuous monitoring for data-driven decision-making. Currently, a data pipeline is being built, exploratory data analysis has been performed, and the data has been prepped for predictive modeling and interactive dashboards.
 
