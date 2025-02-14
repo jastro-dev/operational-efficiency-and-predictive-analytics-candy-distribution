@@ -28,7 +28,47 @@ This project aims to benchmark and improve the operational efficiency of a candy
 - **Target Gap Analysis**: Compares historical sales with 2024 targets to highlight potential risks (implemented in SQL).
 
 ### **Predictive Modeling**
--   *Planned*
+
+-   **Objective**: Predict late shipments using classification models. The target variable, `late`, is a binary indicator derived from `ship_mode` and `lead_time`, where 1 indicates a late shipment and 0 indicates on-time delivery.
+
+-   **Models Implemented**:
+    -   Logistic Regression
+    -   Decision Tree
+    -   Random Forest (Standard and Out-of-Bag (OOB) variants)
+    -   XGBoost
+
+-   **Feature Engineering and Selection**:
+    - Engineered features such as `origin_postal_code`, `distance_km`, and `lead_time` (described in the Data Pipeline section) were used.
+    - Redundant columns (`lead_time`, `ship_quarter`, `ship_month`, `ship_day`, `ship_year`, `order_quarter`, `order_month`, `order_day`, `order_year`, `target`) were removed to prevent overfitting and improve model focus.
+    - Sequential Feature Selection was employed to identify the most relevant features. The top 5 features identified were: `ship_mode_Same Day`, `ship_mode_Standard Class`, `division_Other`, `region_Interior`, and `unit_cost`.
+
+-   **Evaluation Metrics**:
+    - ROC AUC (Area Under the Receiver Operating Characteristic Curve)
+    - Confusion Matrix
+    - Classification Report (Precision, Recall, F1-Score)
+
+-   **Key Findings**:
+    - The implemented models achieved relatively similar performance, with ROC AUC scores ranging from 0.56 to 0.61 on the test data.
+    - Feature selection with the top 5 features resulted in minor performance changes. The Logistic Regression model showed a slight improvement and achieved the highest ROC AUC score of 0.6085 with selected features.
+    - Overall the selected features achieved similar, or slightly better, generalization than models run on the entire dataset.
+
+-   **Results Summary**:
+
+    | Model                     | ROC AUC | Confusion Matrix           | Features   |
+    |---------------------------|---------|----------------------------|------------|
+    | Logistic Regression       | 0.6058  | \[[1029, 1004], [602, 1442]] | All        |
+    | Decision Tree             | 0.6063  | \[[884, 1149], [454, 1590]]  | All        |
+    | Random Forest Standard    | 0.5637  | \[[1160, 873], [906, 1138]]   | All        |
+    | Random Forest OOB         | 0.5713  | \[[2897, 2194], [2176, 2927]] | All        |
+    | XGBoost                   | 0.6011  | \[[1005, 1028], [597, 1447]] | All        |
+    | Logistic Regression       | 0.6085  | \[[1028, 1005], [590, 1454]]  | Selected   |
+    | Decision Tree             | 0.6071  | \[[909, 1124], [476, 1568]]   | Selected   |
+    | Random Forest Standard    | 0.6041  | \[[994, 1039], [574, 1470]]   | Selected   |
+    | Random Forest OOB         | 0.6079  | \[[2479, 2612], [1384, 3719]]  | Selected   |
+    | XGBoost                   | 0.6059  | \[[917, 1116], [489, 1555]]   | Selected   |
+
+-   **Next Steps**: Further investigation is needed to improve model performance. This could involve exploring different modeling techniques, further feature engineering, or hyperparameter tuning.
+
 
 ### **Interactive Dashboards**
 -   *Planned*
