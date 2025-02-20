@@ -1,6 +1,6 @@
-# Operational Efficiency Benchmarking for Candy Distribution (Work in Progress)
+# Operational Efficiency Benchmarking for Candy Distribution
 
-This project aims to benchmark and improve the operational efficiency of a candy manufacturing and distribution business. This repository is a work in progress. It integrates diverse data sources, performs detailed analyses, and builds predictive and interactive tools to provide actionable insights and continuous monitoring for data-driven decision-making. Currently, a data pipeline is being built, exploratory data analysis has been performed, and the data has been prepped for predictive modeling and interactive dashboards.
+This project benchmarks and improves the operational efficiency of a candy manufacturing and distribution business. It integrates diverse data sources, performs detailed analyses, and builds predictive and interactive tools to provide actionable insights and continuous monitoring for data-driven decision-making. The project includes a complete data pipeline, exploratory data analysis, predictive modeling, and interactive dashboards.
 
 ---
 
@@ -94,6 +94,8 @@ This project aims to benchmark and improve the operational efficiency of a candy
 - Engineered new features such as `origin_postal_code`, `distance_km`, and `lead_time` to enhance analysis and modeling.
 - Performed initial EDA to identify key trends in sales performance, production efficiency, and supply chain management.
 -  Setup database connections for both SQLite and MySQL, and implemented a test query for data validation.
+- Developed and implemented predictive models for late shipment prediction.
+- Created interactive dashboards for comprehensive operational efficiency monitoring.
 
 ---
 
