@@ -71,7 +71,20 @@ This project aims to benchmark and improve the operational efficiency of a candy
 
 
 ### **Interactive Dashboards**
--   *Planned*
+-   The culmination of this project is an interactive dashboard providing a comprehensive view of operational efficiency. Data from the MySQL database was pulled and transformed to create key performance indicators (KPIs) and visualizations.
+-   **Key Features:**
+    -   **Quarterly KPI Performance:** Revenue against targets per division, enabling quick assessment of goal attainment. For example, Chocolate Quarterly Sales are at $16.41K against a goal of $27K (-39.22%), Sugar Quarterly Sales are at $40.93K against a goal of $15K (-99.73%) and Other Quarterly Sales are at $1.51K against a goal of $3K (-49.54%).
+    -   **Lead Time vs. Late Probability Analysis:** A scatter plot visualizing the relationship between product lead times and the probability of late delivery, with bubble size indicating unit profit. This allows for targeted efforts towards products needing delivery improvements. Key products identified for optimization are detailed below:
+
+        | Product              | Average Predicted Probability of Lateness | Median Lead Time |
+        |----------------------|-------------------------------------------|------------------|
+        | Fizzy Lifting Drinks | 79.23%                                    | 6 days           |
+        | Nerds                | 61.57%                                    | 6 days           |
+        | Laffy Taffy          | 58.16%                                    | 6 days           |
+
+    -   **Total and Monthly Revenue Analysis:** Filterable by division, factory, product name, region, and ship mode, providing granular insights into revenue drivers and trends. The Total Revenue bar graph and Monthly Average Revenue line graph are included.
+-   **Important Limitation:** Due to the data having a cutoff at the end of 2024, Year-to-Date (YTD) measures were created using alternative methods. The current date was interpreted as December 1, 2024, and data was filtered based on relevant variables instead of using standard time intelligence functions.
+-   This dashboard serves as a central hub for continuous monitoring and data-driven decision-making, completing the end-to-end operational efficiency benchmarking solution.
 
 ---
 
