@@ -139,3 +139,11 @@ This project benchmarks and improves the operational efficiency of a candy manuf
     ```bash
     jupyter notebook main_notebook.ipynb
     ```
+
+---
+
+## Data Source
+The data used in this project was sourced from Maven Analytics Data Playground. You can access the full dataset from the following link:
+
+- [Maven Analytics Data Playground](https://mavenanalytics.io/data-playground)
+- [Dataset Direct Download Link](https://maven-datasets.s3.amazonaws.com/US+Candy+Distributor/US+Candy+Distributor.zip)
