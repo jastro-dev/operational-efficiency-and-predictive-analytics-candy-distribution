@@ -73,7 +73,7 @@ This project benchmarks and improves the operational efficiency of a candy manuf
 ### **Interactive Dashboards**
 -   The culmination of this project is an interactive dashboard providing a comprehensive view of operational efficiency. Data from the MySQL database was pulled and transformed to create key performance indicators (KPIs) and visualizations.
 -   **Key Features:**
-    -   **Quarterly KPI Performance:** Revenue against targets per division, enabling quick assessment of goal attainment. For example, Chocolate Quarterly Sales are at $16.41K against a goal of $27K (-39.22%), Sugar Quarterly Sales are at $40.93K against a goal of $15K (-99.73%) and Other Quarterly Sales are at $1.51K against a goal of $3K (-49.54%).
+    -   **Quarterly KPI Performance:** Revenue against targets per division, enabling quick assessment of goal attainment. For example, Chocolate Quarterly Sales are at $16.41K against a goal of $27K (-39.22%), Sugar Quarterly Sales are at $40.93 against a goal of $15K (-99.73%) and Other Quarterly Sales are at $1.51K against a goal of $3K (-49.54%).
     -   **Lead Time vs. Late Probability Analysis:** A scatter plot visualizing the relationship between product lead times and the probability of late delivery, with bubble size indicating unit profit. This allows for targeted efforts towards products needing delivery improvements. Key products identified for optimization are detailed below:
 
         | Product              | Average Predicted Probability of Lateness | Median Lead Time |
