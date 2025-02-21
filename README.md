@@ -1,4 +1,4 @@
-# Operational Efficiency Benchmarking for Candy Distribution
+# Operational Efficiency & Predictive Analytics: Candy Distribution
 
 This project benchmarks and improves the operational efficiency of a candy manufacturing and distribution business. It integrates diverse data sources, performs detailed analyses, and builds predictive and interactive tools to provide actionable insights and continuous monitoring for data-driven decision-making. The project includes a complete data pipeline, exploratory data analysis, predictive modeling, and interactive dashboards.
 
