@@ -86,6 +86,9 @@ This project benchmarks and improves the operational efficiency of a candy manuf
 -   **Important Limitation:** Due to the data having a cutoff at the end of 2024, Year-to-Date (YTD) measures were created using alternative methods. The current date was interpreted as December 1, 2024, and data was filtered based on relevant variables instead of using standard time intelligence functions.
 -   This dashboard serves as a central hub for continuous monitoring and data-driven decision-making, completing the end-to-end operational efficiency benchmarking solution.
 
+#### **📊 View the Interactive Dashboard**  
+🔗 **[Access the Dashboard Here](https://app.powerbi.com/view?r=eyJrIjoiZGQyZTk1OWMtZjYzNy00MTBkLWI4ZTAtYWFkZGUzNzlmNjAxIiwidCI6IjVkNGNmODgzLTJlMzQtNGZlNi04ZDExLWE0ZWE5NTk0ZTQ0YyIsImMiOjF9)**
+
 ---
 
 ## Key Achievements
